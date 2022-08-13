@@ -1,0 +1,239 @@
+:root {
+    --background-color: #F5F5F5;
+    --background-header-color: #FFFFFF;
+    --background-main-color: #2F303A;
+    --primary-text-color: #212121;
+    --secondary-text-color: #FFFFFF;
+    --third-text-color: #2196F3;
+    --black-text-color: #000000;
+    --adress-text-color: #757575;
+    --background-team-color: #F5F4FA;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+    --main-button-color: #188CE8;
+}
+body {
+    background-color: var(--background-color);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: var(--primary-text-color);
+}
+a {text-decoration: none;}
+li {list-style: none;}
+img {display: block;}
+.header-menu {
+    background-color: var(--background-header-color);
+}
+.logo-one {
+    color: var(--third-text-color);
+    font-family: Raleway, sans-serif;
+    font-style: Bold;
+    font-size: 26px;
+    line-height: 1.19;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 3%;
+}
+.logo-two {
+   color: var(--black-text-color);
+   font-family: Raleway, sans-serif;
+    font-style: Bold;
+    font-size: 26px;
+    line-height: 1.19;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 3%;
+}
+.menu-link {
+    font-style: Medium;
+    line-height: 1.14;
+    text-align: Left;
+    vertical-align: Top;
+    letter-spacing: 2%;
+}
+.menu-link:hover, .menu-link:focus {
+    color: var(--third-text-color);
+}
+.adress-mail, .adress-tel {
+color: var(--adress-text-color);
+font-style: Medium;
+line-height: 1.14;
+text-align: Left;
+vertical-align: Top;
+letter-spacing: 2%;
+}
+.adress-mail:hover, .adress-mail:focus {
+    color: var(--third-text-color);
+}
+.adress-tel:hover, .adress-tel:focus {
+    color: var(--third-text-color);
+}
+.main-list {background-color: var(--background-main-color);}
+.hero-text {
+    color: var(--secondary-text-color);
+    font-style: Black;
+    font-size: 44px;
+    line-height: 1.36;
+    line-height: 116%;;
+    text-align: Center;
+    vertical-align: Top;
+    letter-spacing: 6%;
+}
+.main-button {
+    background-color: var(--third-text-color);
+    color: var(--secondary-text-color);
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 30px;
+    line-height: 160%;
+    text-align: Center;
+    vertical-align: Center;
+    letter-spacing: 6%;
+    cursor: pointer;
+}
+.main-button:hover, .main-button:focus {
+    color: var(--main-button-color);
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.main-header {
+    font-style: Bold;
+    line-height: 1.14;
+    text-align: Left;
+    vertical-align: Top;
+    letter-spacing: 3%;
+}
+.main-text {
+    color: var(--adress-text-color);
+    line-height: 1.71;
+    line-height: 146%;
+    text-align: Left;
+    vertical-align: Top;
+    letter-spacing: 3%;
+}
+.header-text {
+font-style: Bold;
+font-size: 36px;
+line-height: 1.17;
+text-align: Center;
+vertical-align: Top;
+letter-spacing: 3%;
+}
+.team-list {
+background-color: var(--background-team-color);
+}
+.team-header {
+font-style: Bold;
+font-size: 36px;
+line-height: 1.17;
+text-align: Center;
+vertical-align: Top;
+letter-spacing: 3%;
+}
+.header-name {
+font-style: Medium;
+font-size: 16px;
+line-height: 19px;
+text-align: Center;
+vertical-align: Top;
+letter-spacing: 3%;
+}
+.name-text {
+color: var(--adress-text-color);
+font-size: 16px;
+line-height: 1,19;
+text-align: Center;
+vertical-align: Top;
+letter-spacing: 3%;
+}
+.btn-item {
+background-color: var(--background-team-color);
+font-family: inherit;
+font-style: Medium;
+font-size: 16px;
+line-height: 1.6;
+line-height: 139%;
+text-align: Center;
+vertical-align: Top;
+letter-spacing: 3%;
+cursor: pointer;
+}
+.btn-item:hover, .btn-item:focus {
+    background-color: var(--third-text-color);
+    color: var(--background-header-color);
+}
+.header-project {
+font-style: Bold;
+font-size: 18px;
+line-height: 2;
+line-height: 171%;
+text-align: Left;
+vertical-align: Top;
+letter-spacing: 6%;
+}
+.project-text {
+color: var(--adress-text-color);
+font-size: 16px;
+line-height: 1.88;
+line-height: 160%;
+text-align: Left;
+vertical-align: Top;
+letter-spacing: 3%;
+}
+.footer-menu {
+background-color: var(--background-main-color);
+}
+.footer-list {
+    font-style: normal;
+}
+.logo-three {
+color: var(--third-text-color);
+font-family: Raleway, sans-serif;
+font-style: Bold;
+font-size: 26px;
+line-height: 1.19;
+text-align: left;
+vertical-align: top;
+letter-spacing: 3%;
+}
+.logo-four {
+color: var(--background-header-color);
+font-family: Raleway, sans-serif;
+font-style: Bold;
+font-size: 26px;
+line-height: 1.19;
+text-align: left;
+vertical-align: top;
+letter-spacing: 3%;
+}
+.adress-text{
+color: var(--background-header-color);
+line-height: 1.7;
+line-height: 146%;
+text-align: Left;
+vertical-align: Top;
+letter-spacing: 3%;
+}
+.footer-link {
+color: var(--footer-text-color);
+line-height: 1.7;
+line-height: 146%;
+text-align: Left;
+vertical-align: Top;
+letter-spacing: 3%;
+}
+.adress-text:hover, .footer-link:hover {
+color: var(--third-text-color);
+}
+.adress-text:focus, .footer-link:focus {
+color: var(--third-text-color);
+}
