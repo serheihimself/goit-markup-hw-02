@@ -12,10 +12,11 @@
     --main-button-color: #188CE8;
 }
 body {
-    background-color: var(--background-color);
+    background-color: var(--background-header-color);
     font-family: Roboto, sans-serif;
     font-size: 14px;
     color: var(--primary-text-color);
+    letter-spacing: 0.03em;
 }
 a {text-decoration: none;}
 li {list-style: none;}
@@ -26,40 +27,40 @@ img {display: block;}
 .logo-one {
     color: var(--third-text-color);
     font-family: Raleway, sans-serif;
-    font-style: Bold;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     text-align: left;
     vertical-align: top;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
 }
 .logo-two {
    color: var(--black-text-color);
    font-family: Raleway, sans-serif;
-    font-style: Bold;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     text-align: left;
     vertical-align: top;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
 }
 .menu-link {
-    font-style: Medium;
+    color: var(--primary-text-color);
+    font-weight: 500;
     line-height: 1.14;
-    text-align: Left;
-    vertical-align: Top;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
 }
 .menu-link:hover, .menu-link:focus {
     color: var(--third-text-color);
 }
+.current {
+color: var(--third-text-color);
+}
 .adress-mail, .adress-tel {
 color: var(--adress-text-color);
-font-style: Medium;
+font-weight: 500;
 line-height: 1.14;
-text-align: Left;
-vertical-align: Top;
-letter-spacing: 2%;
+letter-spacing: 0.02em;
 }
 .adress-mail:hover, .adress-mail:focus {
     color: var(--third-text-color);
@@ -70,28 +71,27 @@ letter-spacing: 2%;
 .main-list {background-color: var(--background-main-color);}
 .hero-text {
     color: var(--secondary-text-color);
-    font-style: Black;
+    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    line-height: 116%;;
     text-align: Center;
     vertical-align: Top;
-    letter-spacing: 6%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 .main-button {
+    font-family: inherit;
     background-color: var(--third-text-color);
     color: var(--secondary-text-color);
-    font-style: Bold;
+    font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
-    line-height: 160%;
+    line-height: 1.87;
     text-align: Center;
-    vertical-align: Center;
-    letter-spacing: 6%;
+    letter-spacing: 0.06em;
     cursor: pointer;
 }
 .main-button:hover, .main-button:focus {
-    color: var(--main-button-color);
+    background-color: var(--main-button-color);
 }
 .visually-hidden {
     position: absolute;
@@ -106,46 +106,46 @@ letter-spacing: 2%;
     margin: -1px;
 }
 .main-header {
-    font-style: Bold;
+    font-weight: 700;
     line-height: 1.14;
     text-align: Left;
     vertical-align: Top;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 .main-text {
     color: var(--adress-text-color);
     line-height: 1.71;
-    line-height: 146%;
     text-align: Left;
     vertical-align: Top;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
 }
 .header-text {
-font-style: Bold;
+font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
 text-align: Center;
 vertical-align: Top;
-letter-spacing: 3%;
+letter-spacing: 0.03em;
 }
 .team-list {
 background-color: var(--background-team-color);
 }
 .team-header {
-font-style: Bold;
+font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
 text-align: Center;
 vertical-align: Top;
-letter-spacing: 3%;
+letter-spacing: 0.03em;
 }
 .header-name {
-font-style: Medium;
+font-weight: 500;
 font-size: 16px;
 line-height: 19px;
 text-align: Center;
 vertical-align: Top;
-letter-spacing: 3%;
+letter-spacing: 0.03em;
 }
 .name-text {
 color: var(--adress-text-color);
@@ -153,18 +153,17 @@ font-size: 16px;
 line-height: 1,19;
 text-align: Center;
 vertical-align: Top;
-letter-spacing: 3%;
+letter-spacing: 0.03em;
 }
 .btn-item {
 background-color: var(--background-team-color);
 font-family: inherit;
-font-style: Medium;
+font-weight: 500;
 font-size: 16px;
 line-height: 1.6;
-line-height: 139%;
 text-align: Center;
 vertical-align: Top;
-letter-spacing: 3%;
+letter-spacing: 0.03em;
 cursor: pointer;
 }
 .btn-item:hover, .btn-item:focus {
@@ -172,22 +171,20 @@ cursor: pointer;
     color: var(--background-header-color);
 }
 .header-project {
-font-style: Bold;
+font-weight: 700;
 font-size: 18px;
 line-height: 2;
-line-height: 171%;
 text-align: Left;
 vertical-align: Top;
-letter-spacing: 6%;
+letter-spacing: 0.06em;
 }
 .project-text {
 color: var(--adress-text-color);
 font-size: 16px;
 line-height: 1.88;
-line-height: 160%;
 text-align: Left;
 vertical-align: Top;
-letter-spacing: 3%;
+letter-spacing: 0.03em;
 }
 .footer-menu {
 background-color: var(--background-main-color);
@@ -198,38 +195,36 @@ background-color: var(--background-main-color);
 .logo-three {
 color: var(--third-text-color);
 font-family: Raleway, sans-serif;
-font-style: Bold;
+font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 text-align: left;
 vertical-align: top;
-letter-spacing: 3%;
+letter-spacing: 0.03em;
 }
 .logo-four {
 color: var(--background-header-color);
 font-family: Raleway, sans-serif;
-font-style: Bold;
+font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 text-align: left;
 vertical-align: top;
-letter-spacing: 3%;
+letter-spacing: 0.03em;
 }
 .adress-text{
 color: var(--background-header-color);
-line-height: 1.7;
-line-height: 146%;
+line-height: 1.71;
 text-align: Left;
 vertical-align: Top;
-letter-spacing: 3%;
+letter-spacing: 0.03em;
 }
 .footer-link {
 color: var(--footer-text-color);
-line-height: 1.7;
-line-height: 146%;
+line-height: 1.71;
 text-align: Left;
 vertical-align: Top;
-letter-spacing: 3%;
+letter-spacing: 0.03em;
 }
 .adress-text:hover, .footer-link:hover {
 color: var(--third-text-color);
