@@ -1,3 +1,9 @@
+html {
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+box-sizing: inherit;
+}
 :root {
     --background-color: #F5F5F5;
     --background-header-color: #FFFFFF;
@@ -23,6 +29,23 @@ li {list-style: none;}
 img {display: block;}
 .header-menu {
     background-color: var(--background-header-color);
+    border: 1px solid #ECECEC;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.nav-menu {
+display: flex;
+}
+.container {
+max-width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin: 0 auto;
+}
+.menu-logo {
+padding-top: 24px;
+padding-bottom: 25px;;
 }
 .logo-one {
     color: var(--third-text-color);
@@ -44,6 +67,11 @@ img {display: block;}
     vertical-align: top;
     letter-spacing: 0.03em;
 }
+.menu-list {
+display: flex;
+padding-top: 32px;
+padding-bottom: 32px;
+}
 .menu-link {
     color: var(--primary-text-color);
     font-weight: 500;
@@ -53,8 +81,22 @@ img {display: block;}
 .menu-link:hover, .menu-link:focus {
     color: var(--third-text-color);
 }
+.menu-link {
+padding-right: 50px;
+padding-left: 0%;
+}
+.last {
+padding-right: 0%;
+}
 .current {
 color: var(--third-text-color);
+}
+.adress-list {
+display: flex;
+padding-left: 344px;
+padding-right: 215px;
+padding-top: 32px;
+padding-bottom: 32px;
 }
 .adress-mail, .adress-tel {
 color: var(--adress-text-color);
