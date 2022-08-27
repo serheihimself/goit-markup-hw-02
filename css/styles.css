@@ -309,16 +309,24 @@ letter-spacing: 0.03em;
 .main-slist {
 display: flex;
 justify-content: center;
+text-align: center;
+align-items: center;
 gap: 10px;
 }
 .slist-link {
-display: flex;
+display: inline-flex;
 justify-content: center;
 align-items: center;
 border-radius: 50%;
 width: 44px;
 height: 44px;
 background-color: var(--secondary-text-color);
+color: #afb1b8;
+border: transparent;
+}
+.icons {
+    width: 20px;
+    height: 20px;
 }
 .main-clients {
 padding-top: 94px;
@@ -348,8 +356,10 @@ height: 92px;
 border: 1px solid #afb1b8;
 border-radius: 4px;
 }
-.icon-logo {
+.iconn {
 fill: #AFB1B8;
+width: 106px;
+height: 60px;
 }
 .main-items {
 padding-top: 94px;
