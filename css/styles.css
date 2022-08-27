@@ -314,7 +314,7 @@ align-items: center;
 gap: 10px;
 }
 .slist-link {
-display: inline-flex;
+display: flex;
 justify-content: center;
 align-items: center;
 border-radius: 50%;
@@ -327,6 +327,7 @@ border: transparent;
 .icons {
     width: 20px;
     height: 20px;
+    fill: currentColor;
 }
 .main-clients {
 padding-top: 94px;
@@ -342,12 +343,11 @@ color: var(--primary-text-color);
 }
 .main-customlist {
 display: flex;
+justify-content: center;
+align-items: center;
 gap: 30px;
 }
-.customitem {
-flex-basis: calc((100%-150px) / 6);
-}
-.customlink {
+.customer-link {
 display: flex;
 justify-content: center;
 align-items: center;
@@ -355,11 +355,16 @@ width: 170px;
 height: 92px;
 border: 1px solid #afb1b8;
 border-radius: 4px;
+color: #AFB1B8;;
 }
 .iconn {
-fill: #AFB1B8;
+fill: currentColor;
 width: 106px;
 height: 60px;
+}
+.customer-link:hover {
+color: var(--third-text-color);
+border-color: var(--third-text-color);
 }
 .main-items {
 padding-top: 94px;
