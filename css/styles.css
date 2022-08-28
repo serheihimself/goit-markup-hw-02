@@ -299,6 +299,7 @@ vertical-align: Top;
 letter-spacing: 0.03em;
 }
 .main-word {
+margin-bottom: 16px;
 color: var(--adress-text-color);
 font-size: 16px;
 line-height: 1.19;
@@ -325,9 +326,13 @@ color: #afb1b8;
 border: transparent;
 }
 .icons {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
+width: 20px;
+height: 20px;
+fill: currentColor;
+}
+.slist-link:hover, .slist-link:focus {
+background-color: var(--third-text-color);
+color: var(--background-header-color);
 }
 .main-clients {
 padding-top: 94px;
