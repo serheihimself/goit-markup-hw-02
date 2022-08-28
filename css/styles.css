@@ -110,6 +110,8 @@ margin-right: 50px;
 margin-right: 0px;
 }
 .header-mail, .header-tel {
+display: flex;
+align-items: center;
 padding-top: 32px;
 padding-bottom: 32px;
 color: var(--adress-text-color);
@@ -367,7 +369,7 @@ fill: currentColor;
 width: 106px;
 height: 60px;
 }
-.customer-link:hover {
+.customer-link:hover, .customer-link:focus {
 color: var(--third-text-color);
 border-color: var(--third-text-color);
 }
@@ -425,6 +427,13 @@ margin-right: 0px;
 .main-img:nth-last-child(-n+3) {
 margin-bottom: 0px;
 }
+.main-links {
+display: inline-block;
+color: inherit;
+}
+.main-links:hover, .main-links:focus {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .main-cards {
 border: #EEEEEE solid 1px;
 padding-left: 24px;
@@ -478,7 +487,6 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 text-align: left;
-vertical-align: top;
 letter-spacing: 0.03em;
 }
 .logo-four {
@@ -488,7 +496,6 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 text-align: left;
-vertical-align: top;
 letter-spacing: 0.03em;
 }
 .footer-word {
