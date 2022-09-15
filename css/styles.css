@@ -728,11 +728,16 @@ align-items: center;
 border: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 50%;
 background-color: transparent;
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 width: 30px;
 height: 30px;
 padding: 0;
 right: 8px;
 top: 8px;
+}
+.modal-btn:hover, .modal-btn:focus {
+border-color: var(--third-text-color);
+fill: var(--third-text-color);
 }
 .modal-description {
 font-weight: 700;
@@ -794,12 +799,12 @@ border-radius: 4px;
 .modal-policy {
 position: relative;
 margin-top: 20px;
+margin-bottom: 30px;
 }
 .modal-privacy {
 display: flex;
 justify-content: center;
 align-items: center;
-margin-bottom: 30px;
 line-height: 1.71;
 color: var(--adress-text-color);
 }
@@ -843,6 +848,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250m
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
+letter-spacing: 0.06em;
 border: none;
 outline: none;
 }
