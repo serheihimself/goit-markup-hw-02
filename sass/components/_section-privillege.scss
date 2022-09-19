@@ -1,0 +1,52 @@
+.privilege {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.privilege__list {
+    display: flex;
+}
+
+.privilege__card {
+    width: 270px;
+    margin-right: 30px;
+
+    &:last-child  {
+        margin-right: 0;
+    }
+}
+
+.privilege__box {
+    display: flex;
+    margin-bottom: 30px;
+    background-color: var(--background-team-color);
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+
+.privilege__icon {
+    width: 65px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+.privilege__header {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: Left;
+    vertical-align: Top;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.privilege__text {
+    color: var(--adress-text-color);
+    line-height: 1.71;
+    text-align: Left;
+    vertical-align: Top;
+    letter-spacing: 0.03em;
+}
