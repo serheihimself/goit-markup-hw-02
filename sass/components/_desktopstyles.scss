@@ -104,3 +104,6 @@
     margin-right: 10px;
     fill: currentColor;
 }
+< !--<button type="button" class="mobile-menu__close-btn" js-close-menu>-->
+
+<ul class="mobile-menu__nav"><li class="mobile-menu__list"><a class="mobile-menu__link" href="#">Студія</a></li><li class="mobile-menu__list"><a class="mobile-menu__link" href="#">Портфоліо</a></li><li class="mobile-menu__list"><a class="mobile-menu__link" href="#">Контакти</a></li></ul><ul><li class="mobile-menu__send"><a class="mobile-menu__tel" href="№">+38 096 111 11 11</a></li><li class="mobile-menu__send"><a class="mobile-menu__mail" href="№">info@devstudio.com</a></li></ul><ul class="mobile-menu__contacts"><li class="mobile-menu__social"><a class="mobile-menu__socialinks" href="#">Instagram</a></li><li class="mobile-menu__social"><a class="mobile-menu__socialinks" href="#">Twitter</a></li><li class="mobile-menu__social"><a class="mobile-menu__socialinks" href="#">Facebook</a></li><li class="mobile-menu__social"><a class="mobile-menu__socialinks" href="#">LinkedIn</a></li></ul>
