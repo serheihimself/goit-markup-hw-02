@@ -23,7 +23,7 @@
             <li class="menu__li"><a class="menu__link" href="#">Контакти</a></li>
            </ul>
 </nav>
-<button type="button" class="header__menu-btn" data-menu-open>
+<button type="button" class="header__menu-btn" js-open-menu>
     <svg class="header__menu-icon" width="40" height="40">
         <use href="./sprire.svg#icon-burger"></use>
     </svg>
@@ -43,27 +43,27 @@
         </li>
     </ul>
         </div>
-        <div class="mobile-menu" data-menu>
+        <div class="mobile-menu" js-menu-container>
             <div class="container mobile-menu_container">
-                <button class="mobile-menu__close-btn" data-menu-close>
+                <button type="button" class="mobile-menu__close-btn" js-close-menu>
                     <svg class="mobile-menu__close-icon" width="40" height="40">
                         <use href="./sprire.svg#icon-close-backdrop"></use>
                     </svg>
                 </button>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <ul class="mobile-menu__nav">
+                    <li class="mobile-menu__list"><a class="mobile-menu__link" href="#">Студія</a></li>
+                    <li class="mobile-menu__list"><a class="mobile-menu__link" href="#">Портфоліо</a></li>
+                    <li class="mobile-menu__list"><a class="mobile-menu__link" href="#">Контакти</a></li>
                 </ul>
                 <ul>
-                    <li></li>
-                    <li></li>
+                    <li class=""><a class="mobile-menu__adress" href="#"></a>+38 096 111 11 11</li>
+                    <li class=""><a class="mobile-menu__adress" href="#">info@devstudio.com</a></li>
                 </ul>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <ul class="mobile-menu__contacts">
+                    <li><a class="mobile-menu__social" href="#">Instagram</a></li>
+                    <li><a class="mobile-menu__social" href="#">Twitter</a></li>
+                    <li><a class="mobile-menu__social" href="#">Facebook</a></li>
+                    <li><a class="mobile-menu__social" href="#">LinkedIn</a></li>
                 </ul>
             </div>
         </div>
