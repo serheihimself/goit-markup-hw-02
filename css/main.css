@@ -293,6 +293,9 @@ button {
   .mobile-menu__link:hover, .mobile-menu__link:focus {
     color: var(--third-text-color);
   }
+  .mobile-menu__link_current {
+    color: var(--third-text-color);
+  }
   .mobile-menu__send {
     margin-bottom: 32px;
   }
@@ -342,6 +345,54 @@ button {
     display: none;
   }
 }
+.hero {
+  background-color: var(--background-main-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/mobile-img/img-hero1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 480px;
+  height: 400px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+.hero__head {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 360px;
+  color: var(--secondary-text-color);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero__button {
+  font-family: inherit;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: var(--third-text-color);
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: Center;
+  letter-spacing: 0.06em;
+}
+.hero__button:hover, .hero__button:focus {
+  background-color: var(--main-button-color);
+}
+
 .privilege {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -702,6 +753,44 @@ button {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .footer__general {
+    margin-bottom: 60px;
+  }
+  .send {
+    margin: 0 auto;
+  }
+  .send__form {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer .container {
+    display: block;
+    text-align: center;
+  }
+  .footer__general {
+    text-align: center;
+  }
+  .footer__general, .social {
+    margin-bottom: 60px;
+  }
+  .footer__logo, .social__title, .send__title {
+    margin-bottom: 20px;
+  }
+  .social__ {
+    text-align: center;
+  }
+  .send__form {
+    display: block;
+  }
+}
 .footer {
   background-color: var(--background-main-color);
   padding-top: 60px;
@@ -772,6 +861,7 @@ button {
 
 .social__list {
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -797,10 +887,6 @@ button {
   fill: currentColor;
 }
 
-.send {
-  margin-left: auto;
-}
-
 .send__title {
   display: inline-block;
   margin-bottom: 20px;
@@ -809,10 +895,6 @@ button {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-}
-
-.send__form {
-  display: flex;
 }
 
 .send__input {
@@ -838,7 +920,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 12px;
+  margin: 0 auto;
+  margin-top: 20px;
   width: 200px;
   height: 50px;
   background-color: var(--third-text-color);
@@ -881,8 +964,8 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   background-color: var(--background-header-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1005,6 +1088,11 @@ button {
 }
 .modal__check:focus + .modal__checkbox {
   border: 2px solid var(--third-text-color);
+}
+
+.modal__frase {
+  font-size: 12px;
+  line-height: 1.16;
 }
 
 .modal__link {
