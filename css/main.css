@@ -753,6 +753,24 @@ button {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer__general {
+    margin-right: 70px;
+  }
+  .send {
+    margin-left: auto;
+  }
+  .send__form {
+    display: flex;
+  }
+  .send__btn {
+    margin-left: 12px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .footer .container {
     display: flex;
@@ -769,6 +787,9 @@ button {
   .send__form {
     display: block;
   }
+  .send__btn {
+    margin-top: 20px;
+  }
 }
 @media screen and (max-width: 767px) {
   .footer .container {
@@ -781,29 +802,17 @@ button {
   .footer__general, .social {
     margin-bottom: 60px;
   }
-  .footer__logo, .social__title, .send__title {
-    margin-bottom: 20px;
-  }
-  .social__ {
-    text-align: center;
-  }
   .send__form {
     display: block;
+  }
+  .send__btn {
+    margin-top: 20px;
   }
 }
 .footer {
   background-color: var(--background-main-color);
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer .container {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer__general {
-  margin-right: 70px;
 }
 
 .footer__adress {
@@ -920,8 +929,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  margin-top: 20px;
   width: 200px;
   height: 50px;
   background-color: var(--third-text-color);

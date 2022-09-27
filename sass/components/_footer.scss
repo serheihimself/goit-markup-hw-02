@@ -1,3 +1,21 @@
+@media screen and (min-width:1200px) {
+    .footer .container {
+            display: flex;
+            align-items: baseline;
+        }
+        .footer__general {
+            margin-right: 70px;
+        }
+        .send {
+            margin-left: auto;
+                }
+        .send__form {
+            display: flex;
+        }
+        .send__btn {
+            margin-left: 12px;
+        }
+}
 @media screen and (max-width: 1199px) {
     .footer .container {
             display: flex;
@@ -13,7 +31,10 @@
     }
     .send__form {
             display: block;
-}
+        }
+    .send__btn {
+            margin-top: 20px;
+        }
 }
 @media screen and (max-width: 767px) {
     .footer .container {
@@ -25,31 +46,18 @@
     .footer__general, .social {
         margin-bottom: 60px;
     }
-    .footer__logo, .social__title, .send__title {
-        margin-bottom: 20px;
-    }
-    .social__ {
-        text-align: center;
-    }
     .send__form {
                 display: block;
     }
+    .send__btn {
+        margin-top: 20px;
+    }
 }
 
-    
 .footer {
     background-color: var(--background-main-color);
     padding-top: 60px;
     padding-bottom: 60px;
-}
-
-.footer .container {
-    display: flex;
-    align-items: baseline;
-}
-
-.footer__general {
-    margin-right: 70px;
 }
 
 .footer__adress {
@@ -72,9 +80,9 @@
 .footer__word {
     margin-bottom: 9px;
 
-&:last-child {
-    margin-bottom: 0;
-}
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .footer__contacts {
@@ -84,7 +92,8 @@
     letter-spacing: 0.03em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         color: var(--third-text-color);
     }
 }
@@ -124,7 +133,8 @@
     color: var(--secondary-text-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         background-color: var(--third-text-color);
         color: var(--secondary-text-color);
     }
@@ -160,7 +170,8 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         border-color: var(--third-text-color);
         outline: none;
     }
@@ -170,8 +181,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    margin-top: 20px;
     width: 200px;
     height: 50px;
     background-color: var(--third-text-color);
@@ -183,11 +192,13 @@
     font-weight: 700;
     letter-spacing: 0.06em;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         background-color: var(--main-button-color);
         box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     }
+
     .send__svg {
-            margin-left: 10px;
-        }
+        margin-left: 10px;
     }
+}
