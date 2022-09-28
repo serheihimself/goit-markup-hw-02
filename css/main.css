@@ -103,12 +103,14 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  .header {
+  .header__box {
+    justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .header__box {
-    justify-content: space-between;
+  .logo_header {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
   .menu {
     display: none;
@@ -131,6 +133,8 @@ button {
   }
   .logo_header {
     margin-right: 87px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
   .menu {
     display: flex;
@@ -140,12 +144,7 @@ button {
     justify-content: center;
     flex-direction: column;
     margin-left: auto;
-  }
-  .header__li {
-    margin-bottom: 10px;
-  }
-  .header__li:last-child {
-    margin-bottom: 0;
+    row-gap: 10px;
   }
   .header__menu-btn {
     display: none;
@@ -154,17 +153,14 @@ button {
 @media screen and (min-width: 1200px) {
   .logo_header {
     margin-right: 93px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
   .header__adress {
     display: flex;
     flex-direction: row;
     margin-left: auto;
-  }
-  .header__li {
-    margin-right: 30px;
-  }
-  .header__li:last-child {
-    margin-right: 0px;
+    column-gap: 30px;
   }
 }
 .header {
@@ -179,11 +175,6 @@ button {
 .nav {
   display: flex;
   align-items: center;
-}
-
-.logo_header {
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .logo__one {
@@ -602,46 +593,92 @@ button {
     display: none;
   }
 }
+@media screen and (max-width: 767px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .team__teammate {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  .team__teamlist {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .team__portrait {
+    width: 450px;
+  }
+  .team__box {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .team__teammate {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  .team__teamlist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .team__portrait {
+    width: 354px;
+  }
+  .team__box {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .team__teammate {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+  .team__teamlist {
+    display: flex;
+    column-gap: 30px;
+  }
+  .team__portrait {
+    width: 270px;
+  }
+  .team__box {
+    padding: 30px 0;
+  }
+}
 .team {
   background-color: var(--background-team-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team__teammate {
-  margin-top: 0px;
-  margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
   line-height: 1.17;
   text-align: Center;
   vertical-align: Top;
   letter-spacing: 0.03em;
 }
 
-.team__teamlist {
-  display: flex;
-}
-
 .team__portrait {
   background-color: var(--background-header-color);
-  width: 270px;
-  margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.team__portrait:last-child {
-  margin-right: 0px;
-}
-
-.team__box {
-  padding: 30px 0;
 }
 
 .team__name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: Center;
   vertical-align: Top;
   letter-spacing: 0.03em;
@@ -662,7 +699,7 @@ button {
   justify-content: center;
   text-align: center;
   align-items: center;
-  gap: 10px;
+  column-gap: 10px;
 }
 
 .team__link {
@@ -779,24 +816,44 @@ button {
   height: 60px;
 }
 
-.items {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 767px) {
+  .items {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .items__btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    row-gap: 15px;
+    column-gap: 8px;
+  }
 }
-
-.items__btns {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+@media screen and (min-width: 768px) {
+  .items {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .items__btns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    column-gap: 8px;
+  }
 }
-
-.items__pic {
-  margin-right: 8px;
+@media screen and (min-width: 1200px) {
+  .items {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .items__btns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    column-gap: 8px;
+  }
 }
-.items__pic:last-child {
-  margin-right: 0px;
-}
-
 .items__btn {
   padding-top: 6px;
   padding-bottom: 6px;
@@ -820,25 +877,40 @@ button {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+@media screen and (max-width: 767px) {
+  .cards__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cards__img {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cards__icon {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cards__img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__icon {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cards__img {
+    width: 370px;
+  }
+}
 .cards {
   display: flex;
 }
 
 .cards__icon {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.cards__img {
-  width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-.cards__img:nth-child(3n) {
-  margin-right: 0px;
-}
-.cards__img:nth-last-child(-n+3) {
-  margin-bottom: 0px;
+  gap: 30px;
 }
 
 .cards__links {
@@ -892,7 +964,7 @@ button {
   line-height: 2;
   text-align: Left;
   vertical-align: Top;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
 }
 
 .cards__word {
@@ -918,6 +990,9 @@ button {
   .send__form {
     display: flex;
   }
+  .send__input {
+    width: 358px;
+  }
   .send__btn {
     margin-left: 12px;
   }
@@ -938,6 +1013,9 @@ button {
   .send__form {
     display: block;
   }
+  .send__input {
+    width: 358px;
+  }
   .send__btn {
     margin-top: 20px;
   }
@@ -955,6 +1033,10 @@ button {
   }
   .send__form {
     display: block;
+  }
+  .send__input {
+    width: 100%;
+    max-width: 358px;
   }
   .send__btn {
     margin-top: 20px;
@@ -1058,7 +1140,6 @@ button {
 }
 
 .send__input {
-  width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;

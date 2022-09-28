@@ -12,6 +12,9 @@
         .send__form {
             display: flex;
         }
+        .send__input {
+            width: 358px;
+        }
         .send__btn {
             margin-left: 12px;
         }
@@ -32,6 +35,9 @@
     .send__form {
             display: block;
         }
+    .send__input {
+            width: 358px;
+        }
     .send__btn {
             margin-top: 20px;
         }
@@ -47,7 +53,11 @@
         margin-bottom: 60px;
     }
     .send__form {
-                display: block;
+        display: block;
+    }
+    .send__input {
+        width: 100%;
+        max-width: 358px;
     }
     .send__btn {
         margin-top: 20px;
@@ -157,7 +167,6 @@
 }
 
 .send__input {
-    width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;

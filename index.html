@@ -52,7 +52,7 @@
                 </button>
                 <ul class="mobile-menu__nav">
                     <li class="mobile-menu__list"><a class="mobile-menu__link mobile-menu__link_current" href="#">Студія</a></li>
-                    <li class="mobile-menu__list"><a class="mobile-menu__link" href="#">Портфоліо</a></li>
+                    <li class="mobile-menu__list"><a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a></li>
                     <li class="mobile-menu__list"><a class="mobile-menu__link" href="#">Контакти</a></li>
                 </ul>
                 <ul class="mobile-menu__adress">
@@ -118,12 +118,31 @@
         <div class="container">
         <h2 class="profile__description">Чим ми займаємося</h2>
         <ul class="profile__item">
-            <li class="profile__photo"><img src="./images/wtopc1.jpg" alt="Робота за пк" width="370" height="294">
+            <li class="profile__photo">
+                <picture>
+                <source srcset="./images/desktop-img/work1d.webp 1x, ./images/desktop-img/work1d@2x.webp 2x" media="(min-width:1200px)"
+                type="image/webp">
+                <source srcset="./images/desktop-img/work1d.jpg 1x, ./images/desktop-img/work1d@2x.jpg 2x" media="(min-width:1200px)">
+                <img src="./images/wtopc1.jpg" alt="Робота за пк">
+                </picture>
             <p class="profile__desicion">десктопні додатки</p></li>
-            <li class="profile__photo"><img src="./images/wtomv2.jpg" alt="Розробка мобільної версії" width="370" height="294">
+            <li class="profile__photo">
+                <picture>
+                <source srcset="./images/desktop-img/work2d.webp 1x, ./images/desktop-img/work2d@2x.webp 2x" media="(min-width:1200px)"
+                type="image/webp">
+                <source srcset="./images/desktop-img/work2d.jpg 1x, ./images/desktop-img/work2d@2x.jpg 2x" media="(min-width:1200px)">
+                <img src="./images/wtomv2.jpg" alt="Розробка мобільної версії">
+                </picture>
             <p class="profile__desicion">мобільні додатки</p></li>
-            <li class="profile__photo"><img src="./images/wtolp3.jpg" alt="Робота на планшеті" width="370" height="294">
-            <p class="profile__desicion">дизайнерські рішення</p></li>
+            <li class="profile__photo">
+                <picture>
+                <source srcset="./images/desktop-img/work3d.webp 1x, ./images/desktop-img/work3d@2x.webp 2x" media="(min-width:1200px)"
+                type="image/webp">
+                <source srcset="./images/desktop-img/work3d.jpg 1x, ./images/desktop-img/work3d@2x.jpg 2x" media="(min-width:1200px)">
+                <img src="./images/wtolp3.jpg" alt="Робота на планшеті">
+                </picture>
+                <p class="profile__desicion">дизайнерські рішення</p>
+                </li>
         </ul>
     </div>
     </section>
@@ -341,7 +360,7 @@
     </section>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container footer__box">
             <div class="footer__general">
             <a class="logo footer__logo" href="/index.html"><span class="logo__three">Web</span><span class="logo__four">Studio</span></a>
             <address class="footer__adress">
