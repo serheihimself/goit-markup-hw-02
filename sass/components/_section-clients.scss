@@ -1,30 +1,79 @@
-.clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+@media screen and (max-width:767px) {
+    .clients {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    .clients__head {
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 1.17;
+                }
+    .clients__customlist {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .clients__link {
+        width: 210px;
+        height: 92px;
+    }
+            }
+@media screen and (min-width:768px) {
+    .clients {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    .clients__head {
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 1.17;
+    }
+    .clients__customlist {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .clients__link {
+        width: 226px;
+        height: 92px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .clients {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    .clients__head {
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.67;
+    }
+    .clients__customlist {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+    }
+    .clients__link {
+        width: 170px;
+        height: 92px;
+    }
 }
 
 .clients__head {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.67;
     text-align: center;
     color: var(--primary-text-color);
-}
-
-.clients__customlist {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
 }
 
 .clients__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     color: #AFB1B8;
