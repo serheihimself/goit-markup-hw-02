@@ -125,6 +125,12 @@ button {
     margin: 0;
     line-height: 0;
   }
+  .header__menu-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header__menu-btn:hover .header__menu-icon, .header__menu-btn:focus .header__menu-icon {
+    fill: var(--third-text-color);
+  }
 }
 @media screen and (min-width: 768px) {
   .header__box {
@@ -287,6 +293,12 @@ button {
     padding: 0;
     line-height: 0;
   }
+  .mobile-menu__close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mobile-btn:hover .mobile-menu__close-icon, .mobile-btn:focus .mobile-menu__close-icon {
+    fill: var(--third-text-color);
+  }
   .mobile-menu__nav {
     display: flex;
     flex-direction: column;
@@ -308,6 +320,7 @@ button {
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .mobile-menu__link:hover, .mobile-menu__link:focus {
     color: var(--third-text-color);
@@ -373,6 +386,11 @@ button {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-img/hero1x.jpg);
     background-size: cover;
   }
+  .hero__head {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.61;
+  }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
@@ -388,6 +406,11 @@ button {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-img/headert1x.jpg);
     background-size: cover;
   }
+  .hero__head {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.61;
+  }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
@@ -402,6 +425,11 @@ button {
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop-img/herod1x.jpg);
     background-size: cover;
+  }
+  .hero__head {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
@@ -423,11 +451,8 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 360px;
   color: var(--secondary-text-color);
   font-weight: 900;
-  font-size: 26px;
-  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -462,7 +487,6 @@ button {
     justify-content: center;
   }
   .privilege__card {
-    width: 450px;
     margin-bottom: 30px;
   }
   .privilege__card:last-child {
@@ -606,9 +630,6 @@ button {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
-  }
-  .team__portrait {
-    width: 450px;
   }
   .team__box {
     padding-top: 30px;
@@ -824,10 +845,10 @@ button {
   .items__btns {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
     margin-bottom: 40px;
     row-gap: 15px;
     column-gap: 8px;
+    max-width: 326px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1180,6 +1201,24 @@ button {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -1203,8 +1242,6 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  height: 609px;
   padding: 40px;
   background-color: var(--background-header-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

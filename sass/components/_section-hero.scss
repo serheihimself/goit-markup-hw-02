@@ -7,6 +7,11 @@
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-img/hero1x.jpg);
         background-size: cover;
     }
+        .hero__head {
+            width: 360px;
+            font-size: 26px;
+            line-height: 1.61;
+        }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width:767px),
@@ -26,6 +31,11 @@ screen and (min-resolution: 2dppx) and (max-width:767px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-img/headert1x.jpg);
         background-size: cover;
     }
+    .hero__head {
+         width: 360px;
+         font-size: 26px;
+         line-height: 1.61;
+    }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width:768px),
 screen and (min-resolution: 192dpi) and (min-width:768px),
@@ -43,6 +53,11 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
         padding-bottom: 200px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop-img/herod1x.jpg);
         background-size: cover;
+    }
+    .hero__head {
+        width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
     }
 }
 
@@ -69,11 +84,8 @@ screen and (min-resolution: 2dppx) and (min-width:1200px) {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    width: 360px;
     color: var(--secondary-text-color);
     font-weight: 900;
-    font-size: 26px;
-    line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
