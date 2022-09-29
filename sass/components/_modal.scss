@@ -1,6 +1,7 @@
 @media screen and (max-width:767px) {
     .modal {
-        width: 450px;
+        width: 100%;
+        max-width: 450px;
         height: 609px;
     }
 }
